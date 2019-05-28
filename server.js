@@ -48,7 +48,7 @@ wsTool.on('connection', function (ws) {
 });
 
 function setupConnection(ws, isDevice) {
-  //console.log("websocket connected (" + (isDevice ? "device" : "tool") + ")");
+  console.log("websocket connected (" + (isDevice ? "device" : "tool") + ")");
 
   new Connection(ws, isDevice);
 }
